@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/favicon.ico" fill="red" type="image/x-icon" />
+    <!-- ------------- Font Awesome CDN Link ------------- -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <title>Personal Portfolio Website - Matthias Müringer</title>
+  </head>
+  <body>
+    <header>
+      <div id="header">
+        <div class="container">
+          <nav>
+            <img src="images/logo.png" class="logo" />
+            <ul id="sidemenu">
+              <li><a href="#header">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <i class="fa-solid fa-xmark close-button"></i>
+            </ul>
+            <i class="fa-solid fa-bars open-button"></i>
+          </nav>
+          <div class="header-text">
+            <p>Full-Stack Web Developer</p>
+            <h1>
+              Hi, my name is<span> Matthias</span><br />I'm from Wiesbaden,
+              Germany
+            </h1>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- ------------- About ------------- -->
+    <main>
+      <div id="about">
+        <div class="container">
+          <div class="row">
+            <div class="about-col-1">
+              <img src="images/me.png" />
+            </div>
+            <div class="about-col-2">
+              <h1 class="sub-title">About Me</h1>
+              <p>
+                Who am I and why I want to make a career change from Sales 
+                into Software Development. In short, here is my story: <br><br>
+
+                Having worked in Sales for more than 10 years in different business 
+                sectors, in one of my former positions as a consultant at an international 
+                operating US-staffing firm, I, of course, 
+                came across to many specialists working in that field.
+                Among other aspects, I got extremely excited and inspired by those candidates 
+                in terms of their knowledge, their way to work, their projects and duties etc., 
+                and I said to myself "It's phantastic what they are doing. It's much more than a
+                job, it's a kind of self-realization."<br><br>
+
+                Coming back to me, my first touch with IT-Programming was already in the early 
+                2000's when I was coding static websites for family and some friends. However, 
+                it was just a hobby for several years, but coding in general became more and more 
+                interesting to me. As mentioned at the beginning, a few years ago, there was a turning point in my 
+                career development when meeting candidates from the IT-industry. I began looking for 
+                appropriate opportunities how to become quickly a professional web developer. Going back 
+                to the university or a college to take up a related study was not an option as it simply 
+                takes too long. The most feasible solution turned out to be a an Online coding bootcamp as 
+                I had to work full-time for financial reasons. After a thorough research I came across to 
+                "CareerFoundry", a Berlin-based company for further education wich offers a range of different Software trainings. I realized 
+                that CareerFoundry has a very good reputation and is offering solid IT-programs. As it was matching 
+                my expectation and desires I decided to attend the program "Full-Stack Web Development".<br><br>
+
+                During my bootcamp studies I learned a lot about modern web technologies like React, 
+                React Native, Angular, and other state-of-the-art JavaScript libraries and frameworks, but also about
+                serverless functions in the cloud, e.g. Amazon Web Services and databases like MongDB. Needless to mention, it was a tough and challenging time in every aspect to complete the 
+                program, but it was also a very exciting experience and I learned a lot. Recently, i.e. on May, 30th 2023, I successfully completed the program with 6 bootcamp projects and
+                1 project I took from a boiler-plate-code YouTube tutorial - The Ecommerce shopping cart, wich is the final
+                name of the application I build. For a first look, please have a look at GitHub where all of my self-coded
+                projects are deployed to.<br><br/>
+                
+                Now, I'm very excited about finding an interesting entry-level-position in the business world to really get 
+                my hands dirty, to deepen my IT-knowledge and, of course, to build more sophisticated real-world-projects in an
+                exciting and supporting team environment. In principle, I am open to job offers worldwide with preference
+                to Europe, USA, Canada, East-Asia (preferably Japan), and Australia. My earliest possible starting date would
+                be the 1st of August 2023. 
+               
+              <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">
+                  Skills
+                </p>
+                <p class="tab-links" onclick="opentab('experience')">
+                  Experience
+                </p>
+                <p class="tab-links" onclick="opentab('education')">
+                  Education
+                </p>
+              </div>
+              <div class="tab-contents active-tab" id="skills">
+                <ul>
+                  <li>
+                    <span>Web Development</span><br />Designing and developing
+                    websites and web applications
+                  </li>
+                  <li>
+                    <span>Full-Stack Web Development</span><br />Working with
+                    the Mern stack.
+                  </li>
+                  <li>
+                    <span>Mobile App Development</span><br />Building
+                    Android/iOS apps with React Native
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="experience">
+                <ul>
+                  <li>
+                    <span>2022 - Feb, 2023</span><br />Key Account
+                    Manager/Senior Sales Manager at Yourfirm
+                  </li>
+                  <li>
+                    <span>2019 - 2020</span><br />Consultant Sales at Monster
+                    Worldwide
+                  </li>
+                  <li>
+                    <span>2018 - 2019 </span><br />Consultant IT & Technology at
+                    Robert Half International Inc.
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="education">
+                <ul>
+                  <li>
+                    <span>2021 - May, 2023</span><br />Full-Stack Web
+                    Development Program at CareerFoundry
+                  </li>
+                  <li>
+                    <span>2015</span><br />B.A. Business Administration from
+                    South Westphalia University of Applied Sciences
+                  </li>
+                  <li>
+                    <span>2012</span><br />MBA from Verwaltungs- und
+                    Wirtschaftsakademie Wiesbaden e.V.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ------------- Services ------------- -->
+      <div id="services">
+        <div class="container">
+          <h1 class="sub-title">My Services</h1>
+          <div class="services-list">
+            <div>
+              <i class="fa-solid fa-code"></i>
+              <h2>Frontend Development</h2>
+              <p>
+                HTML5, CSS, SCSS, JavaScript, React, Redux, Jest, React Native,
+                Angular, TypeScript, Bootstrap, Material UI, Git, GitHub.
+              </p>
+            </div>
+            <div>
+              <i class="fa-solid fa-server"></i>
+              <h2>Backend Development</h2>
+              <p>
+                Node.js, Express.js, MongoDB, Heroku, AWS Serverless Toolkit,
+                AWS Lambda Functions, Google Firestore/Firebase.
+              </p>
+            </div>
+            <div>
+              <i class="fa-brands fa-app-store"></i>
+              <h2>App Development</h2>
+              <p>React Native, Expo, GiftedChat Library.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ------------- Portfolio ------------- -->
+      <div id="portfolio">
+        <div class="container">
+          <h1 class="sub-title">My Work</h1>
+          <div class="work-list">
+            <div class="work">
+              <img
+                src="images/work-1-pokemon-app.png"
+                alt="pokemon-app image"
+              />
+              <div class="layer">
+                <h1>Pokédex</h1>
+                <br />
+                <h3>Tech stack: HTML5/CSS/JavaScript/Bootstrap</h3>
+                <br />
+                <p class="work-summary">
+                  A small web application that is loading data from an external
+                  API and enables the viewing of data points in detail. The app
+                  is using the PokéAPI.
+                </p>
+                <br />
+                <a
+                  href="https://koola123.github.io/pokedex/"
+                  class="btn"
+                  target="_blank"
+                  >Live Preview</a
+                >
+                <a
+                  href="https://github.com/koola123/pokedex"
+                  class="btn"
+                  target="_blank"
+                  >GitHub Link
+                </a>
+              </div>
+            </div>
+            <div class="work">
+              <img src="images/work-2-myFlix-api.png" alt="myFlix-api image" />
+              <div class="layer">
+                <h1>MyFlix-API</h1>
+                <br />
+                <h3>Tech stack: Node/Express/MongoDB/Heroku</h3>
+                <br />
+                <p class="work-summary">
+                  The server-side for the myflix movies application. It provides
+                  users with access to different URL endpoints (movies,
+                  directors, genres), and receives it's data from a MongoDB
+                  database. Endpoints are tested in Postman. The API is fully
+                  documented with JSDoc and deployed on Heroku.
+                </p>
+                <br />
+                <a
+                  href="https://my-blockbusters.herokuapp.com/documentation"
+                  class="btn"
+                  target="_blank"
+                  >Live Preview</a
+                >
+                <a
+                  href="https://github.com/koola123/myFlix-API"
+                  class="btn"
+                  target="_blank"
+                  >GitHub Link</a
+                >
+              </div>
+            </div>
+            <div class="work">
+              <img src="images/work-3-myFlix-app.png" alt="myFlix-app image" />
+              <div class="layer">
+                <h1>MyFlix-React-client</h1>
+                <br />
+                <h3>Tech stack: React/Redux/React Bootstrap</h3>
+                <br />
+                <p class="work-summary">
+                  The client-side of the movies app built with React. Users are
+                  able to sign up, update their personal information, and create
+                  a list of their favorite movies as well as viewing information
+                  about different movies, directors, and genres.
+                </p>
+                <br />
+                <a
+                  href="https://myflix-movies-client.netlify.app/"
+                  class="btn"
+                  target="_blank"
+                  >Live Preview</a
+                >
+                <a
+                  href="https://github.com/koola123/myFlix"
+                  class="btn"
+                  target="_blank"
+                  >GitHub Link</a
+                >
+              </div>
+            </div>
+            <div class="work">
+              <img src="images/work-4-meet-app.png" alt="meet-app image" />
+              <div class="layer">
+                <h1>Meet</h1>
+                <br />
+                <h3>
+                  Tech stack: React/Jest/AWS Lambda Functions/Bootstrap/Google
+                  Authentication/Google Calendar API
+                </h3>
+                <br />
+                <p class="work-summary">
+                  This is a serverless, progressive web application (PWA) with
+                  React using a test-driven development (TDD) technique. It uses
+                  serverless functions (AWS) instead of a classic server which
+                  provides all files and data. The application is using the
+                  Google Calendar API to fetch upcoming full-stack meetup
+                  events from all around the world.
+                </p>
+                <br />
+                <a
+                  href="https://koola123.github.io/meet"
+                  class="btn"
+                  target="_blank"
+                  >Live Preview</a
+                >
+                <a
+                  href="https://github.com/koola123/meet"
+                  class="btn"
+                  target="_blank"
+                  >GitHub Link</a
+                >
+              </div>
+            </div>
+            <div class="work">
+              <img src="images/work-5-chat-app.png" alt="chat-app image" />
+              <div class="layer">
+                <h1>ChatApp</h1>
+                <br />
+                <h3>
+                  Tech stack: React Native/Expo/GiftedChat/Google
+                  Firestore/Firebase
+                </h3>
+                <br />
+                <p class="work-summary">
+                  An instant messaging service similar to WhatsApp for mobile
+                  devices using the React Native technology. The app provides
+                  users with a chat interface and options to share images and
+                  their location. Messages between users are saved in the Google
+                  Firestore/Firebase database. It saves the latest messages even
+                  if offline.
+                </p>
+                <br />
+                <a
+                  href="https://www.youtube.com/watch?v=PKXM3phLcDw"
+                  class="btn"
+                  target="_blank"
+                  >Live Preview</a
+                >
+                <a
+                  href="https://github.com/koola123/chat"
+                  class="btn"
+                  target="_blank"
+                  >GitHub Link</a
+                >
+              </div>
+            </div>
+            <div class="work">
+              <img
+                src="images/work-6-myFlix-angular-app.png"
+                alt="myFlix-angular-app image"
+              />
+              <div class="layer">
+                <h1>MyFlix-Angular-client</h1>
+                <br />
+                <h3>Tech stack: Angular/TypeScript/CSS/MaterialUI</h3>
+                <br />
+                <p class="work-summary">
+                  The client-side of the movies web application written in
+                  Angular. The application will provide users with access to
+                  information about different movies, directors, and genres.
+                  Users will be able to sign up, update their personal
+                  information, and create a list of their favorite movies. The
+                  app is fully documented with TypeDoc.
+                </p>
+                <br />
+                <a
+                  href="https://koola123.github.io/myflix-angular-client/welcome"
+                  class="btn"
+                  target="_blank"
+                  >Live Preview</a
+                >
+                <a
+                  href="https://github.com/koola123/myFlix-Angular-client"
+                  class="btn"
+                  target="_blank"
+                  >GitHub Link</a
+                >
+              </div>
+            </div>
+          </div>
+          <a href="#" class="button">See more</a>
+        </div>
+      </div>
+    </main>
+    <!-- ------------- Contact ------------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i> mmueringer@web.de</p>
+            <p><i class="fa-solid fa-square-phone"></i> +49 (0)176 74427691</p>
+            <div class="social-icons">
+              <a href="https://github.com/koola123" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/matthias-m-73983718b/"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a
+                href="https://www.xing.com/profile/Matthias_Mueringer/cv"
+                target="_blank"
+                ><i class="fa-brands fa-xing"></i
+              ></a>
+              <a href="https://twitter.com/KoolcoderDev" target="_blank"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+            </div>
+            <a
+              href="files/matthias-mueringer-cv.pdf"
+              target="_blank"
+              download
+              class="button button-2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input
+                type="text"
+                name="Name"
+                placeholder="Your Name..."
+                required
+              />
+              <input
+                type="text"
+                name="Email"
+                placeholder="Your Email..."
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message..."
+              ></textarea>
+              <button type="submit" class="button button-2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="copyright">
+        <p>&copy; 2023 - Matthias Müringer. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycby_yd2C5W_ynnT7LXCO95RGD5ZtGohM9ipz-ZiumcpW-qPKfcFN5SeElWy8s6WukWK5xg/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "The message has been sent successfully.";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 2000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
