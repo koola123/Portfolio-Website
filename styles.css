@@ -433,3 +433,20 @@ nav .fa-solid {
     font-size: 14px;
   }
 }
+
+.lang-change {
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+}
+.lang-change li {
+  padding: 5px 22px;
+}
+.lang-change li a {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+.lang-change li a.active {
+  border-bottom: 2px solid lime;
+}
