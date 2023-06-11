@@ -114,6 +114,7 @@ nav ul li a:hover::after {
   font-size: 60px;
   font-weight: 600;
   color: #fff;
+  margin-bottom: 20px;
 }
 
 .tab-titles {
@@ -433,22 +434,3 @@ nav .fa-solid {
     font-size: 14px;
   }
 }
-
-/* .lang-change {
-  display: flex;
-  justify-content: center;
-  list-style-type: none;
-  background: #333;
-}
-.lang-change li {
-  padding: 10px 10px;
-}
-.lang-change li a {
-  color: #ff7f50;
-  text-decoration: none;
-  cursor: pointer;
-}
-.lang-change li a.active {
-  background: #000;
-  padding: 10px;
-} */
