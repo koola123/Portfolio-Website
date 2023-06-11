@@ -302,9 +302,19 @@ nav ul li a:hover::after {
   transition: transform 0.5s;
 }
 .social-icons a:hover {
-  color: #0000ff;
   transform: translateY(-5px);
+  color: #daa520;
 }
+.social-icons a:nth-child(2):hover {
+  color: #4875b4;
+}
+.social-icons a:nth-child(3):hover {
+  color: #005a5f;
+}
+.social-icons a:nth-child(4):hover {
+  color: #00acee;
+}
+
 .button.button-2 {
   display: inline-block;
   background: #ff7f50;
@@ -360,6 +370,10 @@ nav .fa-solid {
   }
   .header-text h1 {
     font-size: 40px;
+  }
+  #sidemenu {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
   }
   nav .fa-solid {
     display: block;
