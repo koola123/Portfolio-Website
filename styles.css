@@ -12,7 +12,6 @@ html {
 body {
   background: #080808;
   color: #fff;
-  font-size: 22px;
 }
 
 #header {
@@ -83,44 +82,48 @@ nav ul li a:hover::after {
 .header-text h1 {
   font-size: 70px;
   margin-top: 20px;
-  animation-name: glowing-colors;
+  animation-name: glowing-color;
+  animation-direction: alternate;
   animation-duration: 4s;
+  /* animation-delay: -2s; */
   position: relative;
 }
-@keyframes glowing-colors {
+@keyframes glowing-color {
   0% {
-    right: 0px;
-    top: 0px;
-    transform: scale(1.1);
-    rotate: -360deg;
+    right: 0;
+    top: -1000px;
+    padding: 50px;
+    border-radius: 5px;
   }
   25% {
-    right: 0px;
+    right: 0;
     top: 0px;
+    background: #0a0a2b;
     padding: 50px;
-    transform: scale(1.1);
-    rotate: 45deg;
+    border-radius: 5px;
   }
   50% {
-    right: 0px;
+    right: 0;
     top: 0px;
+    background: #021f13;
     padding: 50px;
-    transform: scale(1.1);
-    rotate: 45deg;
+    border-radius: 5px;
   }
   75% {
-    right: 0px;
+    right: 0;
     top: 0px;
-    padding: 50px;
+    background: #270127;
+    padding: 50px; 
+    border-radius: 5px;
   }
   100% {
-    right: 0px;
+    right: 0;
     top: 0px;
-    background: blue;
+    background: rgb(42, 36, 6);
     padding: 50px;
+    border-radius: 5px;
   }
 }
-
 .header-text h1 span {
   color: #ff7f50;
 }
@@ -240,6 +243,9 @@ nav ul li a:hover::after {
   font-size: 30px;
   font-weight: 500;
   margin-bottom: 15px;
+}
+.services-list div p {
+  font-size: 20px;
 }
 .services-list div a {
   color: #fff;
@@ -505,15 +511,14 @@ nav .fa-solid {
   .sub-title {
     font-size: 40px;
   }
+  .sub-title-2 {
+    font-size: 32px;
+  }
   .about-col-1,
   .about-col-2 {
     flex-basis: 100%;
-  }
-  .about-col-1 {
     margin-bottom: 30px;
-  }
-  .about-col-2 {
-    font-size: 14px;
+    font-size: 17px;
   }
   .tab-links {
     font-size: 16px;
@@ -542,6 +547,9 @@ nav .fa-solid {
     padding: 5px;
     max-width: 100px;
     font-size: 10px;
+  }
+  footer p {
+    font-size: 17px;
   }
   .copyright {
     font-size: 14px;
