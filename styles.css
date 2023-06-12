@@ -12,6 +12,7 @@ html {
 body {
   background: #080808;
   color: #fff;
+  font-size: 22px;
 }
 
 #header {
@@ -67,13 +68,59 @@ nav ul li a:hover::after {
 }
 
 .header-text {
-  margin-top: 20%;
+  margin-top: 15.5%;
+  padding: 35px;
   font-size: 30px;
+  line-height: 1.1;
+}
+
+.header-text p {
+  font-size: 38px;
+  color: #fff;
+  font-weight: bold;
 }
 
 .header-text h1 {
-  font-size: 60px;
+  font-size: 70px;
   margin-top: 20px;
+  animation-name: glowing-colors;
+  animation-duration: 4s;
+  position: relative;
+}
+@keyframes glowing-colors {
+  0% {
+    right: 0px;
+    top: 0px;
+    transform: scale(1.1);
+    rotate: -360deg;
+  }
+  25% {
+    right: 0px;
+    top: 0px;
+    padding: 50px;
+    transform: scale(1.1);
+    rotate: 45deg;
+  }
+  50% {
+    right: 0px;
+    top: 0px;
+    padding: 50px;
+    transform: scale(1.1);
+    rotate: 45deg;
+ 
+  }
+  75% {
+    right: 0px;
+    top: 0px;
+    padding: 50px;
+
+  }
+  100% {
+    right: 0px;
+    top: 0px;
+    background: blue;
+    padding: 50px;
+  }
 }
 
 .header-text h1 span {
@@ -105,7 +152,12 @@ nav ul li a:hover::after {
 .about-col-2 {
   flex-basis: 60%;
 }
-
+.about-col-2 p {
+  letter-spacing: 8px;
+}
+.about-col-2 div {
+  text-align: justify;
+}
 .about-col-2 .sub-text {
   background-color: #0000ff;
 }
@@ -113,8 +165,15 @@ nav ul li a:hover::after {
 .sub-title {
   font-size: 60px;
   font-weight: 600;
+  color: #00ff00;
+  margin-bottom: 20px;
+}
+.sub-title-2 {
+  font-size: 40px;
+  font-weight: 600;
   color: #fff;
   margin-bottom: 20px;
+  margin-top: 40px;
 }
 
 .tab-titles {
@@ -167,7 +226,7 @@ nav ul li a:hover::after {
   margin-top: 50px;
 }
 .services-list div {
-  background: #444;
+  background: #f5632e;
   color: #fff;
   padding: 40px;
   font-size: 13px;
@@ -191,7 +250,7 @@ nav ul li a:hover::after {
   display: inline-block;
 }
 .services-list div:hover {
-  background: #ff7f50;
+  background: #0000ff;
   transform: translateY(-10px);
 }
 
@@ -295,24 +354,28 @@ nav ul li a:hover::after {
 }
 .social-icons a {
   text-decoration: none;
-  font-size: 30px;
+  font-size: 39px;
   margin-right: 15px;
-  color: #fff;
+  color: #0000ff;
   display: inline-block;
-  transition: transform 0.5s;
+  transition: .3s ease;
 }
-.social-icons a:hover {
-  transform: translateY(-5px);
-  color: #daa520;
+.social-icons a:first-child:hover {
+  color: #fff;
+  transform: translateY(-2px);
+  
 }
 .social-icons a:nth-child(2):hover {
   color: #4875b4;
+  transform: translateY(-2px);
 }
 .social-icons a:nth-child(3):hover {
   color: #005a5f;
+  transform: translateY(-2px);
 }
-.social-icons a:nth-child(4):hover {
+.social-icons a:last-child:hover {
   color: #00acee;
+  transform: translateY(-2px);
 }
 
 .button.button-2 {
@@ -366,21 +429,17 @@ nav .fa-solid {
     font-size: 16px;
   }
   .header-text p {
-    font-size: 21px;
+    font-size: 15px;
   }
   .header-text h1 {
-    font-size: 40px;
-  }
-  #sidemenu {
-    border-top-left-radius: 25px;
-    border-bottom-left-radius: 25px;
+    font-size: 30px;
   }
   nav .fa-solid {
     display: block;
     font-size: 25px;
   }
   nav ul {
-    background: #ff7f50;
+    background: linear-gradient(to right, #000, #0000ff);
     position: fixed;
     top: 0;
     right: -200px;
@@ -389,10 +448,15 @@ nav .fa-solid {
     padding-top: 50px;
     z-index: 1;
     transition: right 0.5s ease-in-out;
+    border-bottom-left-radius: 25px;
   }
   nav ul li {
     display: block;
     margin: 25px;
+  }
+  nav ul li a {
+    color: #ff7f50;
+    font-size: 15px;
   }
   nav ul .fa-solid {
     position: absolute;
@@ -426,6 +490,9 @@ nav .fa-solid {
   .contact-left,
   .contact-right {
     flex-basis: 100%;
+  }
+  .contact-left p {
+    font-size: 18px;
   }
   .work-list {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
