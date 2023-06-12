@@ -107,13 +107,11 @@ nav ul li a:hover::after {
     padding: 50px;
     transform: scale(1.1);
     rotate: 45deg;
- 
   }
   75% {
     right: 0px;
     top: 0px;
     padding: 50px;
-
   }
   100% {
     right: 0px;
@@ -358,12 +356,11 @@ nav ul li a:hover::after {
   margin-right: 15px;
   color: #0000ff;
   display: inline-block;
-  transition: .3s ease;
+  transition: 0.3s ease;
 }
 .social-icons a:first-child:hover {
   color: #fff;
   transform: translateY(-2px);
-  
 }
 .social-icons a:nth-child(2):hover {
   color: #4875b4;
@@ -428,6 +425,41 @@ nav .fa-solid {
     margin-top: 50%;
     font-size: 16px;
   }
+  @keyframes glowing-colors {
+    0% {
+      right: 0px;
+      top: 0px;
+      transform: scale(1.1);
+      rotate: -360deg;
+      padding: 15px;
+    }
+    25% {
+      right: 0px;
+      top: 0px;
+      padding: 15px;
+      transform: scale(1.1);
+      rotate: 45deg;
+    }
+    50% {
+      right: 0px;
+      top: 0px;
+      padding: 15px;
+      transform: scale(1.1);
+      rotate: 45deg;
+    }
+    75% {
+      right: 0px;
+      top: 0px;
+      padding: 15px;
+    }
+    100% {
+      right: 0px;
+      top: 0px;
+      background: blue;
+      padding: 15px;
+    }
+  }
+
   .header-text p {
     font-size: 15px;
   }
