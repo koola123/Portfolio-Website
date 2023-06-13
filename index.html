@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Web Development, Fullstack Web Development" />
     <link rel="icon" href="images/favicon.ico" fill="red" type="image/x-icon" />
     <!-- ------------- Font Awesome CDN Link ------------- -->
     <link
@@ -13,8 +14,14 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles.css" type="text/css" />
-    <title>Personal Portfolio Matthias Müringer - Web Developer | Germany</title>
+    <title>
+      Personal Portfolio Matthias Müringer - Web Developer | Germany
+    </title>
   </head>
   <body>
     <header>
@@ -35,15 +42,16 @@
           <div class="header-text">
             <p>Full-Stack Web Developer</p>
             <h1>
-              Hi,👋🏻 my name is<span> Matthias.<br></span>I'm from Wiesbaden, Germany<br />
+              Hi, my name is<span> Matthias.<br /></span>I'm from Wiesbaden,
+              Germany<br />
             </h1>
           </div>
         </div>
       </div>
     </header>
     <main>
-       <!-- ------------- Services ------------- -->
-       <div id="services">
+      <!-- ------------- Services ------------- -->
+      <div id="services">
         <div class="container">
           <h1 class="sub-title">My Services</h1>
           <div class="services-list">
@@ -72,65 +80,61 @@
         </div>
       </div>
       <div class="container">
-      <div class="tab-titles">
-        <p class="tab-links active-link" onclick="opentab('skills')">
-          Skills
-        </p>
-        <p class="tab-links" onclick="opentab('experience')">
-          Experience
-        </p>
-        <p class="tab-links" onclick="opentab('education')">
-          Education
-        </p>
-      </div>
-      <div class="tab-contents active-tab" id="skills">
-        <ul>
-          <li>
-            <span>Web Development</span><br />Designing and developing
-            websites and web applications
-          </li>
-          <li>
-            <span>Full-Stack Web Development</span><br />Working with
-            the Mern stack
-          </li>
-          <li>
-            <span>Mobile App Development</span><br />Building
-            Android/iOS apps with React Native
-          </li>
-        </ul>
-      </div>
-      <div class="tab-contents" id="experience">
-        <ul>
-          <li>
-            <span>2022 - Feb, 2023</span><br />Key Account
-            Manager/Senior Sales Manager at Yourfirm
-          </li>
-          <li>
-            <span>2019 - 2020</span><br />Consultant Sales at Monster
-            Worldwide
-          </li>
-          <li>
-            <span>2018 - 2019 </span><br />Consultant IT & Technology at
-            Robert Half International Inc.
-          </li>
-        </ul>
-      </div>
-      <div class="tab-contents" id="education">
-        <ul>
-          <li>
-            <span>2021 - May, 2023</span><br />Full-Stack Web
-            Development Program at CareerFoundry
-          </li>
-          <li>
-            <span>2015</span><br />B.A. Business Administration from
-            South Westphalia University of Applied Sciences
-          </li>
-          <li>
-            <span>2012</span><br />MBA from Verwaltungs- und
-            Wirtschaftsakademie Wiesbaden e.V.
-          </li>
-        </ul>
-      </div>
+        <div class="tab-titles">
+          <p class="tab-links active-link" onclick="opentab('skills')">
+            Skills
+          </p>
+          <p class="tab-links" onclick="opentab('experience')">Experience</p>
+          <p class="tab-links" onclick="opentab('education')">Education</p>
+        </div>
+        <div class="tab-contents active-tab" id="skills">
+          <ul>
+            <li>
+              <span>Web Development</span><br />Designing and developing
+              websites and web applications
+            </li>
+            <li>
+              <span>Full-Stack Web Development</span><br />Working with the Mern
+              stack
+            </li>
+            <li>
+              <span>Mobile App Development</span><br />Building Android/iOS apps
+              with React Native
+            </li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="experience">
+          <ul>
+            <li>
+              <span>2022 - Feb, 2023</span><br />Key Account Manager/Senior
+              Sales Manager at Yourfirm
+            </li>
+            <li>
+              <span>2019 - 2020</span><br />Consultant Sales at Monster
+              Worldwide
+            </li>
+            <li>
+              <span>2018 - 2019 </span><br />Consultant IT &amp; Technology at
+              Robert Half International Inc.
+            </li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="education">
+          <ul>
+            <li>
+              <span>2021 - May, 2023</span><br />Full-Stack Web Development
+              Program at CareerFoundry
+            </li>
+            <li>
+              <span>2015</span><br />B.A. Business Administration from South
+              Westphalia University of Applied Sciences
+            </li>
+            <li>
+              <span>2012</span><br />MBA from Verwaltungs- und
+              Wirtschaftsakademie Wiesbaden e.V.
+            </li>
+          </ul>
+        </div>
       </div>
 
       <!-- ------------- Portfolio ------------- -->
@@ -145,9 +149,7 @@
               />
               <div class="layer">
                 <h1>Pokédex</h1>
-                <br />
-                <h3>Tech stack: HTML5/CSS/JavaScript/Bootstrap</h3>
-                <br />
+                <h3>Technology: HTML / CSS / JavaScript / Bootstrap</h3>
                 <p class="work-summary">
                   A small web application that is loading data from an external
                   API and enables the viewing of data points in detail. The app
@@ -171,16 +173,12 @@
             <div class="work">
               <img src="images/work-2-myFlix-api.png" alt="myFlix-api image" />
               <div class="layer">
-                <h1>MyFlix-API</h1>
-                <br />
-                <h3>Tech stack: Node/Express/MongoDB/Heroku</h3>
-                <br />
+                <h1>MyFlix API</h1>
+                <h3>Technology: Node / Express / MongoDB / Heroku</h3>
                 <p class="work-summary">
-                  The server-side for the myflix movies application. It provides
+                  The server-side of the MyFlix movies application. It provides
                   users with access to different URL endpoints (movies,
-                  directors, genres), and receives it's data from a MongoDB
-                  database. Endpoints are tested in Postman. The API is fully
-                  documented with JSDoc and deployed on Heroku.
+                  directors, genres).
                 </p>
                 <br />
                 <a
@@ -200,10 +198,8 @@
             <div class="work">
               <img src="images/work-3-myFlix-app.png" alt="myFlix-app image" />
               <div class="layer">
-                <h1>MyFlix-React-client</h1>
-                <br />
-                <h3>Tech stack: React/Redux/React Bootstrap</h3>
-                <br />
+                <h1>MyFlix</h1>
+                <h3>Technology: React / Redux / React Bootstrap</h3>
                 <p class="work-summary">
                   The client-side of the movies app built with React. Users are
                   able to sign up, update their personal information, and create
@@ -229,19 +225,13 @@
               <img src="images/work-4-meet-app.png" alt="meet-app image" />
               <div class="layer">
                 <h1>Meet</h1>
-                <br />
-                <h3>
-                  Tech stack: React/Jest/AWS Lambda Functions/Bootstrap/Google
-                  Authentication/Google Calendar API
+                <h3>Technology: React / Jest / Puppeteer
                 </h3>
-                <br />
                 <p class="work-summary">
                   This is a serverless, progressive web application (PWA) with
                   React using a test-driven development (TDD) technique. It uses
                   serverless functions (AWS) instead of a classic server which
-                  provides all files and data. The application is using the
-                  Google Calendar API to fetch upcoming full-stack meetup
-                  events from all around the world.
+                  provides all files and data.
                 </p>
                 <br />
                 <a
@@ -261,20 +251,11 @@
             <div class="work">
               <img src="images/work-5-chat-app.png" alt="chat-app image" />
               <div class="layer">
-                <h1>ChatApp</h1>
-                <br />
-                <h3>
-                  Tech stack: React Native/Expo/GiftedChat/Google
-                  Firestore/Firebase
-                </h3>
-                <br />
+                <h1>Chat</h1>
+                <h3>Technology: Expo / React Native / GiftedChat / Google Firestore</h3>
                 <p class="work-summary">
-                  An instant messaging service similar to WhatsApp for mobile
-                  devices using the React Native technology. The app provides
-                  users with a chat interface and options to share images and
-                  their location. Messages between users are saved in the Google
-                  Firestore/Firebase database. It saves the latest messages even
-                  if offline.
+                  A chat app where users can share text messages, images and their location.
+                  When offline, it will save the last data.
                 </p>
                 <br />
                 <a
@@ -297,17 +278,13 @@
                 alt="myFlix-angular-app image"
               />
               <div class="layer">
-                <h1>MyFlix-Angular-client</h1>
-                <br />
-                <h3>Tech stack: Angular/TypeScript/CSS/MaterialUI</h3>
-                <br />
+                <h1>MyFlix</h1>
+                <h3>Technology: Angular / TypeScript / MaterialUI</h3>
                 <p class="work-summary">
-                  The client-side of the movies web application written in
-                  Angular. The application will provide users with access to
-                  information about different movies, directors, and genres.
-                  Users will be able to sign up, update their personal
-                  information, and create a list of their favorite movies. The
-                  app is fully documented with TypeDoc.
+                  The client-side of the movies application written with Angular.
+                  It provides users with access to info about different movies,
+                  directors, and genres. Users can sign up, update their profile info
+                  and create a list of their favorite movies.
                 </p>
                 <br />
                 <a
@@ -328,50 +305,86 @@
           <a href="#" class="button">Home</a>
         </div>
       </div>
-          <!-- ------------- About ------------- -->
-          <div id="about">
-            <div class="container">
-              <div class="row">
-                <div class="about-col-1">
-                  <img src="images/me.png" />
-                </div>
-                <div class="about-col-2">
-                  <h1 class="sub-title">That's Me</h1>
-                    <p>
-                    <span>I’m a globetrotter and a resident of Wiesbaden.</span> <br>
-                    <span>I’m a reliable team player and an independent creative strategist.</span><br>
-                    <span>I’m experienced in sales and a passionate full-stack web developer.</span><br>
-                    </p>
+      <!-- ------------- About ------------- -->
+      <div id="about">
+        <div class="container">
+          <div class="row">
+            <div class="about-col-1">
+              <img src="images/me.png" />
+            </div>
+            <div class="about-col-2">
+              <h1 class="sub-title">That's Me</h1>
+              <p>
+                <span>I’m a globetrotter and a resident of Wiesbaden.</span>
+                <br />
+                <span
+                  >I’m a reliable team player and an independent creative
+                  strategist.</span
+                ><br />
+                <span
+                  >I’m experienced in sales and a passionate full-stack web
+                  developer.</span
+                ><br />
+              </p>
 
-                    <h2 class="sub-title-2">How have I come to IT?</h2>
-                    <div>Before entering the IT world professionally, I worked in sales and as a consultant for IT & Technology at an internationally
-                    operating US-staffing company. In that role, I met many IT-specialists, became fascinated by their profession, particularly 
-                    their extensive knowledge, the way they work, - and their projects. Working with IT professionals was a great experience and,
-                    finally, it was the catalyst to make a fundamental change in my career path from Sales to IT.</div><br><br>
+              <h2 class="sub-title-2">How have I come to IT?</h2>
+              <div>
+                Before entering the IT world professionally, I worked in sales
+                and as a consultant for IT &amp; Technology at an internationally
+                operating US-staffing company. In that role, I met many
+                IT-specialists, became fascinated by their profession,
+                particularly their extensive knowledge, the way they work, - and
+                their projects. Working with IT professionals was a great
+                experience and, finally, it was the catalyst to make a
+                fundamental change in my career path from Sales to IT.
+              </div>
+              <br /><br />
 
-                    <div>Having made that decision, I started searching for the most suitable path to becoming a professional web developer.
-                    Pursuing a related academic program was not an option for me due to my full-time work commitments. Finally, I discovered the most feasible
-                    solution: an online-bootcamp. I came across CareerFoundry, a reputable Berlin-based company for further education
-                    in the field of IT and realized that CareerFoundry offered comprehensive IT-programs. I decided to enroll in their “Full-Stack Web Developer”
-                    program, which perfectly aligned with my expectations and aspirations.</div>
+              <div>
+                Having made that decision, I started searching for the most
+                suitable path to becoming a professional web developer. Pursuing
+                a related academic program was not an option for me due to my
+                full-time work commitments. Finally, I discovered the most
+                feasible solution: an online-bootcamp. I came across
+                CareerFoundry, a reputable Berlin-based company for further
+                education in the field of IT and realized that CareerFoundry
+                offered comprehensive IT-programs. I decided to enroll in their
+                “Full-Stack Web Developer” program, which perfectly aligned with
+                my expectations and aspirations.
+              </div>
 
-                    <h2 class="sub-title-2">My education as a Web Developer</h2>
-                    <div>Throughout the program I gained extensive knowledge in modern web technologies such as React, React Native, 
-                    Angular, and other state-of-the-art JavaScript libraries and frameworks. Additionally, I delved into serverless functions in the cloud,
-                    including platforms like Amazon Web Services. Needless to say, completing the program was a tough and challenging endeavor, but
-                    it was also an incredibly exciting experience for me. On May 30th, 2023, I successfully completed that program having worked on six bootcamp projects and an additional
-                    project that I developed based on a boiler-plate-code tutorial from YouTube. For a first impression, please take a look
-                    at my GitHub where I have deployed all of my self-coded projects.</div>
+              <h2 class="sub-title-2">My education as a Web Developer</h2>
+              <div>
+                Throughout the program I gained extensive knowledge in modern
+                web technologies such as React, React Native, Angular, and other
+                state-of-the-art JavaScript libraries and frameworks.
+                Additionally, I delved into serverless functions in the cloud,
+                including platforms like Amazon Web Services. Needless to say,
+                completing the program was a tough and challenging endeavor, but
+                it was also an incredibly exciting experience for me. On May
+                30th, 2023, I successfully completed that program having worked
+                on six bootcamp projects and an additional project that I
+                developed based on a boiler-plate-code tutorial from YouTube.
+                For a first impression, please take a look at my GitHub where I
+                have deployed all of my self-coded projects.
+              </div>
 
-                    <h2 class="sub-title-2">My expectations as a Web Developer</h2>
-                    <div>I have undergone a professional reorientation for various reasons: As a trained web developer I want to gain work experience as well as expertise in the field of IT and make
-                    my contribution to projects I’m involved in. I also look for inspiring networks, people, and environments. As a dedicated traveller, I am open to new opportunities, including
-                    new cultural spaces, and I am open to a flexible approach to my professional life, whether it be in Germany, Europe or beyond.</div>
-                </div>
+              <h2 class="sub-title-2">My expectations as a Web Developer</h2>
+              <div>
+                I have undergone a professional reorientation for various
+                reasons: As a trained web developer I want to gain work
+                experience as well as expertise in the field of IT and make my
+                contribution to projects I’m involved in. I also look for
+                inspiring networks, people, and environments. As a dedicated
+                traveller, I am open to new opportunities, including new
+                cultural spaces, and I am open to a flexible approach to my
+                professional life, whether it be in Germany, Europe or beyond.
               </div>
             </div>
-          </div> 
-          </main>
+          </div>
+        </div>
+      </div>
+    </main>
     <!-- ------------- Contact ------------- -->
     <div id="contact">
       <div class="container">
@@ -379,7 +392,9 @@
           <div class="contact-left">
             <h1 class="sub-title">Contact Me</h1>
             <p><i class="fa-solid fa-paper-plane"></i> mmueringer@web.de</p>
-            <p><i class="fa-solid fa-square-phone"></i> +49 (0) 176 744 27 691</p>
+            <p>
+              <i class="fa-solid fa-square-phone"></i> +49 (0) 176 744 27 691
+            </p>
             <div class="social-icons">
               <a href="https://github.com/koola123" target="_blank"
                 ><i class="fa-brands fa-github"></i
