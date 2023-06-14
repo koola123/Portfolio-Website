@@ -311,6 +311,7 @@ nav ul li a:hover::after {
 /* ------------- Projects -------------*/
 #projects {
   padding: 50px 0;
+  background: #2f2c2c;
 }
 .project-list {
   display: grid;
@@ -399,6 +400,9 @@ nav ul li a:hover::after {
   padding: 50px 0;
   color: #ababab;
   background: rgb(94, 0, 128);
+}
+.blog img {
+  max-width: 100%;
 }
 .blog-list {
   display: grid;
@@ -606,5 +610,8 @@ nav .fa-solid {
   }
   .services-list ul li {
     font-size: 13px;
+  }
+  .blog-list {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
