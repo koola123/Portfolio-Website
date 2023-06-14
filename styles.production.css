@@ -277,7 +277,7 @@
   .sub-title-2 {
     font-size: 40px;
     font-weight: 600;
-    color: #fff;
+    color:  hsl(120, 100%, 45%);
     margin-bottom: 20px;
     margin-top: 40px;
   }

@@ -5,7 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Web Development, Fullstack Web Development" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="icon" href="images/favicon.ico" fill="red" type="image/x-icon" />
+    <link rel="manifest" href="/site.webmanifest">
     <!-- ------------- Font Awesome CDN Link ------------- -->
     <link
       rel="stylesheet"
@@ -17,6 +21,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap" rel="stylesheet">
+    <!-- ------------- Normalize.css ------------- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="styles.css" type="text/css" />
     <title>
@@ -28,13 +34,14 @@
       <div id="header">
         <div class="container">
           <nav>
-            <img src="images/logo.png" class="logo" />
+            <img src="images/logo.png" class="logo"/>
             <ul id="sidemenu">
               <li><a href="#header">Home</a></li>
               <li><a href="#services">Services</a></li>
-              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#projects">Projects</a></li>
               <li><a href="#about">That's me!</a></li>
               <li><a href="#contact">Contact</a></li>
+              <li><a href="#">Blog</a></li>
               <i class="fa-solid fa-xmark close-button"></i>
             </ul>
             <i class="fa-solid fa-bars open-button"></i>
@@ -43,8 +50,9 @@
             <p>Full-Stack Web Developer</p>
             <h1>
               Hi, my name is<span> Matthias.<br /></span>I'm from Wiesbaden,
-              Germany<br />
+              Germany.
             </h1>
+            <h2>I create beautiful and functional websites.</h2>
           </div>
         </div>
       </div>
@@ -58,89 +66,49 @@
             <div>
               <i class="fa-solid fa-code"></i>
               <h2>Frontend Development</h2>
-              <p>
-                HTML5, CSS, SCSS, JavaScript, React, Redux, Jest, React Native,
-                Angular, TypeScript, Bootstrap, Material UI, Git, GitHub.
-              </p>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>SCSS</li>
+                <li>JavaScript</li>
+                <li>Bootstrap</li>
+                <li>React</li>
+                <li>Angular</li>
+                <li>TypeScript</li>
+                <li>Material UI</li>
+              </ul>
             </div>
             <div>
               <i class="fa-solid fa-server"></i>
               <h2>Backend Development</h2>
-              <p>
-                Node.js, Express.js, MongoDB, Heroku, AWS Serverless Toolkit,
-                AWS Lambda Functions, Google Firestore/Firebase.
-              </p>
+              <ul>
+                <li>NodeJS</li>
+                <li>ExpressJS</li>
+                <li>SQL</li>
+                <li>MongoDB</li>
+                <li>Heroku</li>
+                <li>AWS Serverless Toolkit</li>
+                <li>AWS Lambda Functions</li>
+                <li>Google Firestore</li>
+                <li>Google Firebase</li>
+              </ul>
             </div>
             <div>
               <i class="fa-brands fa-app-store"></i>
-              <h2>App Development</h2>
-              <p>React Native, Expo, GiftedChat Library.</p>
+              <h2>Mobile Development</h2>
+              <ul>
+                <li>Expo</li>
+                <li>React Native</li>
+                <li>Gifted Chat Library</li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
-      <div class="container">
-        <div class="tab-titles">
-          <p class="tab-links active-link" onclick="opentab('skills')">
-            Skills
-          </p>
-          <p class="tab-links" onclick="opentab('experience')">Experience</p>
-          <p class="tab-links" onclick="opentab('education')">Education</p>
-        </div>
-        <div class="tab-contents active-tab" id="skills">
-          <ul>
-            <li>
-              <span>Web Development</span><br />Designing and developing
-              websites and web applications
-            </li>
-            <li>
-              <span>Full-Stack Web Development</span><br />Working with the Mern
-              stack
-            </li>
-            <li>
-              <span>Mobile App Development</span><br />Building Android/iOS apps
-              with React Native
-            </li>
-          </ul>
-        </div>
-        <div class="tab-contents" id="experience">
-          <ul>
-            <li>
-              <span>2022 - Feb, 2023</span><br />Key Account Manager/Senior
-              Sales Manager at Yourfirm
-            </li>
-            <li>
-              <span>2019 - 2020</span><br />Consultant Sales at Monster
-              Worldwide
-            </li>
-            <li>
-              <span>2018 - 2019 </span><br />Consultant IT &amp; Technology at
-              Robert Half International Inc.
-            </li>
-          </ul>
-        </div>
-        <div class="tab-contents" id="education">
-          <ul>
-            <li>
-              <span>2021 - May, 2023</span><br />Full-Stack Web Development
-              Program at CareerFoundry
-            </li>
-            <li>
-              <span>2015</span><br />B.A. Business Administration from South
-              Westphalia University of Applied Sciences
-            </li>
-            <li>
-              <span>2012</span><br />MBA from Verwaltungs- und
-              Wirtschaftsakademie Wiesbaden e.V.
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- ------------- Portfolio ------------- -->
-      <div id="portfolio">
+      <!-- ------------- Projects ------------- -->
+      <div id="projects">
         <div class="container">
-          <h1 class="sub-title">My Work</h1>
+          <h1 class="sub-title">My Projects
           <div class="work-list">
             <div class="work">
               <img
@@ -311,20 +279,78 @@
           <div class="row">
             <div class="about-col-1">
               <img src="images/me.png" />
+              <div class="container">
+                <div class="tab-titles">
+                  <p class="tab-links active-link" onclick="opentab('skills')">
+                    Skills
+                  </p>
+                  <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                  <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                  <ul>
+                    <li>
+                      <span>Web Development</span><br />Designing and developing
+                      websites and web applications
+                    </li>
+                    <li>
+                      <span>Full-Stack Web Development</span><br />Working with the Mern
+                      stack
+                    </li>
+                    <li>
+                      <span>Mobile App Development</span><br />Building Android/iOS apps
+                      with React Native
+                    </li>
+                  </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                  <ul>
+                    <li>
+                      <span>2022 - Feb, 2023</span><br />Key Account Manager/Senior
+                      Sales Manager at Yourfirm
+                    </li>
+                    <li>
+                      <span>2019 - 2020</span><br />Consultant Sales at Monster
+                      Worldwide
+                    </li>
+                    <li>
+                      <span>2018 - 2019 </span><br />Consultant IT &amp; Technology at
+                      Robert Half International Inc.
+                    </li>
+                  </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                  <ul>
+                    <li>
+                      <span>2021 - May, 2023</span><br />Full-Stack Web Development
+                      Program at CareerFoundry
+                    </li>
+                    <li>
+                      <span>2015</span><br />B.A. Business Administration from South
+                      Westphalia University of Applied Sciences
+                    </li>
+                    <li>
+                      <span>2012</span><br />MBA from Verwaltungs- und
+                      Wirtschaftsakademie Wiesbaden e.V.
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
+            
             <div class="about-col-2">
               <h1 class="sub-title">That's Me</h1>
               <p>
-                <span>I’m a globetrotter and a resident of Wiesbaden.</span>
-                <br />
                 <span
+                >I’m experienced in sales and a passionate full-stack web
+                developer.</span
+              ><br />
+              <span
                   >I’m a reliable team player and an independent creative
                   strategist.</span
                 ><br />
-                <span
-                  >I’m experienced in sales and a passionate full-stack web
-                  developer.</span
-                ><br />
+                <span>I’m a globetrotter and a frequent museum visitor.</span>
+                <br />
               </p>
 
               <h2 class="sub-title-2">How have I come to IT?</h2>
@@ -333,7 +359,7 @@
                 and as a consultant for IT &amp; Technology at an internationally
                 operating US-staffing company. In that role, I met many
                 IT-specialists, became fascinated by their profession,
-                particularly their extensive knowledge, the way they work, - and
+                particularly their extensive knowledge, the way they work and
                 their projects. Working with IT professionals was a great
                 experience and, finally, it was the catalyst to make a
                 fundamental change in my career path from Sales to IT.
@@ -342,7 +368,7 @@
 
               <div>
                 Having made that decision, I started searching for the most
-                suitable path to becoming a professional web developer. Pursuing
+                suitable way to becoming a professional web developer. Pursuing
                 a related academic program was not an option for me due to my
                 full-time work commitments. Finally, I discovered the most
                 feasible solution: an online-bootcamp. I came across
@@ -383,6 +409,12 @@
                 including new cultural spaces, and a flexible approach to my professional life, whether 
                 it be in Germany, Europe or beyond.
               </div>
+              <a
+              href="files/matthias-mueringer-cv.pdf"
+              target="_blank"
+              download
+              class="button button-2"
+              >Download CV</a>
             </div>
           </div>
         </div>
@@ -416,13 +448,6 @@
                 ><i class="fa-brands fa-twitter"></i
               ></a>
             </div>
-            <a
-              href="files/matthias-mueringer-cv.pdf"
-              target="_blank"
-              download
-              class="button button-2"
-              >Download CV</a
-            >
           </div>
           <div class="contact-right">
             <form name="submit-to-google-sheet">
