@@ -42,14 +42,6 @@ window.addEventListener("keydown", (e) => {
   }
 });
 
-let header = document.querySelector('#header');
-
-window.addEventListener("scroll", () => {
-    header.classList.toggle("darker", window.scrollY > 0);
-
-    }
-)
-
 let slideIndex = 0;
 showSlides();
 

@@ -29,12 +29,6 @@ body {
   background: var(--dark-green);
 }
 
-#header.darker {
-  background: rgb(40, 44, 44);
-  box-shadow: 0 1px 4x hsl(0 4% 14% / 10%);
-  transition: 0.4s;
-}
-
 .container {
   padding: 10px 10%;
 }
@@ -201,7 +195,6 @@ nav ul li a:hover::after {
 }
 .about-col-1 img {
   max-width: 100%;
-  border-radius: 15px;
   pointer-events: none;
   user-select: none;
 }
@@ -271,6 +264,7 @@ nav ul li a:hover::after {
 /* ------------- Expertise -------------*/
 #expertise {
   padding: 90px 0;
+  background: var(--dark-green);
 }
 .expertise-list {
   display: grid;
@@ -279,7 +273,7 @@ nav ul li a:hover::after {
   margin-top: 50px;
 }
 .expertise-list div {
-  background: #2c4a4c;
+  background:  hsl(184, 27%, 28%);
   color: #fff;
   padding: 40px;
   font-size: 13px;
@@ -310,14 +304,14 @@ nav ul li a:hover::after {
   display: inline-block;
 }
 .expertise-list div:hover {
-  background: #2c4a4c;
+  background: rgb(97, 9, 179);
   transform: translateY(-10px);
 }
 
 /* ------------- Projects -------------*/
 #projects {
   padding: 50px 0;
-  background: #2f2c2c;
+  background: var(--dark-green);
 }
 .project-list {
   display: grid;
@@ -337,6 +331,7 @@ nav ul li a:hover::after {
 .project img {
   width: 100%;
   height: 100%;
+  padding: 50px;
   border-radius: 10px;
   border: 1px solid var(--primary-color);
   display: block;
@@ -405,7 +400,7 @@ nav ul li a:hover::after {
 #blog {
   padding: 50px 0;
   color: #ababab;
-  background: rgb(94, 0, 128);
+  background: rgb(97, 9, 179);
   width: 100%;
 }
 .blog {
@@ -462,20 +457,25 @@ nav ul li a:hover::after {
   transition: 0.3s ease;
 }
 .social-icons a:first-child:hover {
-  color: rgb(219, 20, 60);
+  color: rgb(0, 0, 0);
   transform: translateY(-2px);
+ 
 }
 .social-icons a:nth-child(2):hover {
-  color: rgb(128, 0, 128);
+  color: rgb(0, 114, 177);
   transform: translateY(-2px);
+
 }
 .social-icons a:nth-child(3):hover {
-  color: rgb(154, 69, 151);
+  color: rgb(18, 101, 103);
   transform: translateY(-2px);
+ 
 }
 .social-icons a:last-child:hover {
   color: rgb(18, 175, 237);
   transform: translateY(-2px);
+
+
 }
 
 .button-2 {
@@ -641,7 +641,12 @@ nav .fa-solid {
 }
 
 .slideshow-container img {
-  object-fit: contain;
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border: 2px solid #cccc00;
+  padding: 3px;
+  border-radius: 20px;
 }
 
 /* The dots/bullets/indicators */
