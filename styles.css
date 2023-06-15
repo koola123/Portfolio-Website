@@ -411,7 +411,7 @@ nav ul li a:hover::after {
 .blog {
   font-size: 18px;
   min-height: 100%;
-  max-width: 550px;
+  max-width: 100%;
 }
 .blog div {
   color: #fff;
