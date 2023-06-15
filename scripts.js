@@ -41,3 +41,11 @@ window.addEventListener("keydown", (e) => {
     hideMenu();
   }
 });
+
+let header = document.querySelector('#header');
+
+window.addEventListener("scroll", () => {
+    header.classList.toggle("darker", window.scrollY > 0);
+
+    }
+)

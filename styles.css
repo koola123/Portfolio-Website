@@ -29,6 +29,12 @@ body {
   background: var(--dark-green);
 }
 
+#header.darker {
+  background: rgb(40, 44, 44);
+  box-shadow: 0 1px 4x hsl(0 4% 14% / 10%);
+  transition: 0.4s;
+}
+
 .container {
   padding: 10px 10%;
 }
@@ -417,7 +423,7 @@ nav ul li a:hover::after {
 .blog-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  place-items:center;
+  place-items: center;
   grid-gap: 50px;
 }
 .blog h3 {
@@ -426,7 +432,7 @@ nav ul li a:hover::after {
 }
 
 /* ------------- Contact -------------*/
-#contact{
+#contact {
   background: hsl(184, 27%, 28%);
   color: #ababab;
 }
@@ -499,7 +505,7 @@ form .button-2 {
 }
 footer {
   height: 280px;
-  display: flex; 
+  display: flex;
   justify-content: center;
   align-items: center;
 }
