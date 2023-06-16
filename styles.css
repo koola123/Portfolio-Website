@@ -415,6 +415,12 @@ nav ul li a:hover::after {
   max-width: 100%;
   border-radius: 8px;
 }
+.blog a {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  letter-spacing: 2px;
+}
 .blog-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
