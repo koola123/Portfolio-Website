@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Hi, my name is Matthias. I'm a Full-Stack Web Developer from Wiesbaden, Germany. I create beautiful and functional websites" />
-    <meta name="keywords" content="HTML, CSS, Javascript, Bootstrap, React, Node.js, Web Development, IT, Portfolio" />
+    <meta name="keywords" content="HTML, CSS, Javascript, Bootstrap, React, Node.js, Web Development, Frontend Developer, Web Developer, Full-Stack Developer, Dev Ops, Web Engineer, Mobile Developer, JavaScript Developer, Developer, Programmer, Software Engineer, Software Developer" />
     <meta name="author" content="Matthias Müringer"/>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -31,6 +31,7 @@
     </title>
   </head>
   <body>
+    <!-- ------------- Header ------------- -->
     <header>
       <div id="header">
         <div class="container">
@@ -40,9 +41,8 @@
               <li><a href="#header">Home</a></li>
               <li><a href="#expertise">Expertise</a></li>
               <li><a href="#projects">Projects</a></li>
-              <li><a href="#about">That's me!</a></li>
+              <li><a href="#about">That's me</a></li>
               <li><a href="#contact">Contact</a></li>
-              <li><a href="#blog">Blogs</a></li>
               <i class="fa-solid fa-xmark close-button"></i>
             </ul>
             <i class="fa-solid fa-bars open-button"></i>
@@ -274,49 +274,7 @@
           <a href="#" class="button">Home</a>
         </div>
       </div>
-      <!-- ------------- Blog ------------- -->
-      <div id="blog">
-        <div class="container">
-          <h1 class="sub-title">My Blogs</h1>
-          <div class="blog-list">
-            <div class="blog">
-              <img src="images/blog-4.jpeg" alt="Image for how to design an API"/>
-              <div>July 1st, 2023</div>
-              <h3>How to design a movie API</h3>
-              <p> There are a lot of tech stacks out there and different ways on how to build an API. I will work with the MERN stack. So basically with MongoDB, Express.js, React and Node.js., 
-                and how these technologies fit together...
-              </p>
-              <a href="blog-page.html"> Read Article...</a>
-            </div>
-            <div class="blog">
-              <img src="images/blog-1.jpeg" alt="Image for how to fetch an API"/>
-              <div>June 17th, 2023</div>
-              <h3>Fetching data from an external API</h3>
-              <p>Let's fetch some data from an API and modify the data in a way, that we can extract exactly what we want from it for our needs.
-              </p>
-              <a href="blog-page.html"> Read Article...</a>
-            </div>
-            <div class="blog">
-              <img src="images/blog-2.jpeg" alt="Image for is Chat GPT really worth it"/>
-              <div>June 14th, 2023</div>
-              <h3>Does Chat-GPT really help developers with their work? I've tested it</h3>
-              <p>I've been playing around with Open AI for the last few weeks, and I came to the conclusion that not everything is perfect about it,
-                but how fast it can actually generate a website in a small amount of time...
-              </p>
-              <a href="blog-page.html"> Read Article...</a>
-            </div>
-            <div class="blog">
-              <img src="images/blog-3.jpeg" alt="Image for JavaScript functions"/>
-              <div>June 3rd, 2023</div>
-              <h3>Javascript functions</h3>
-              <p>There are quite a lot of them. I will go over some of the most popular ones, and those which are frequently used in VanillaJS libraries and frameworks, and 
-                how they make a developers life much much easier...</p>
-                <a href="blog-page.html"> Read Article...</a>
-            </div>           
-          </div>
-        </div>
-      </div>
-      <!-- ------------- About ------------- -->
+           <!-- ------------- About ------------- -->
       <div id="about">
         <div class="container">
           <div class="row">
@@ -339,6 +297,7 @@
                   <span class="dot"></span>
                   <span class="dot"></span> 
                 </div>
+                <!-- ------------- Tab Content ------------- -->
               <div class="container">
                 <div class="tab-titles">
                   <p class="tab-links active-link" onclick="opentab('skills')">
@@ -489,7 +448,7 @@
       <div class="container">
         <div class="row">
           <div class="contact-left">
-            <h1 class="sub-title">Contact</h1>
+            <h1 class="sub-title">Contact Me</h1>
             <p><i class="fa-solid fa-paper-plane"></i> mmueringer@web.de</p>
             <p>
               <i class="fa-solid fa-square-phone"></i> +49 (0) 176 744 27 691
@@ -513,29 +472,6 @@
               ></a>
             </div>
           </div>
-          <div class="contact-right">
-            <form name="submit-to-google-sheet">
-              <input
-                type="text"
-                name="Name"
-                placeholder="Your Name..."
-                required
-              />
-              <input
-                type="text"
-                name="Email"
-                placeholder="Your Email..."
-                required
-              />
-              <textarea
-                name="Message"
-                rows="6"
-                placeholder="Your Message..."
-              ></textarea>
-              <button type="submit" class="button button-2">Submit</button>
-            </form>
-            <span id="msg"></span>
-          </div>
         </div>
       </div>
     </div>
@@ -544,24 +480,5 @@
     </footer>
 
     <script src="scripts.js"></script>
-    <script>
-      const scriptURL =
-        "https://script.google.com/macros/s/AKfycby_yd2C5W_ynnT7LXCO95RGD5ZtGohM9ipz-ZiumcpW-qPKfcFN5SeElWy8s6WukWK5xg/exec";
-      const form = document.forms["submit-to-google-sheet"];
-      const msg = document.getElementById("msg");
-
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        fetch(scriptURL, { method: "POST", body: new FormData(form) })
-          .then((response) => {
-            msg.innerHTML = "The message has been sent successfully.";
-            setTimeout(function () {
-              msg.innerHTML = "";
-            }, 2000);
-            form.reset();
-          })
-          .catch((error) => console.error("Error!", error.message));
-      });
-    </script>
   </body>
 </html>
