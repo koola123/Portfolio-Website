@@ -35,6 +35,11 @@ sideMenu.addEventListener("click", (e) => {
   }
 });
 
+body.addEventListener("click", (e) => {
+  let body = document.querySelector("body");
+  if (e.target === body) sideMenu.classList.remove("show");
+})
+
 window.addEventListener("keydown", (e) => {
   let sideMenu = document.getElementById("sidemenu");
   if (e.key === "Escape" && sideMenu.classList.contains("show")) {
