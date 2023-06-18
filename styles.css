@@ -19,7 +19,7 @@ html {
 body {
   font-family: "Roboto", sans-serif;
   font-size: 1.2rem;
-  background: #ccc;
+  background: var(--dark-green);
   color: var(--secondary-color);
 }
 
@@ -404,6 +404,7 @@ nav ul li a:hover::after {
 /* ------------- Contact -------------*/
 #contact {
   background: hsl(184, 27%, 28%);
+  min-height: 350px;
   color: #ababab;
 }
 .contact-left {
@@ -430,7 +431,7 @@ nav ul li a:hover::after {
   transition: 0.3s ease;
 }
 .social-icons a:first-child:hover {
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   transform: translateY(-2px);
 }
 .social-icons a:nth-child(2):hover {
