@@ -297,6 +297,15 @@ nav ul li a:hover::after {
 .btn:hover {
   opacity: 0.9;
 }
+.submit-btn {
+  padding: 15px 55px;
+  font-size: 16px;
+  margin-top: 5px;
+  border: none;
+  background: var(--button-darker);
+  color: #fff;
+  cursor: pointer;
+}
 
 .button {
   display: block;
@@ -418,6 +427,30 @@ nav ul li a:hover::after {
   margin-right: 15px;
   font-size: 25px;
 }
+.contact-right {
+  flex-basis: 60%;
+}
+.contact-right form {
+  width: 100%;
+}
+form {
+  margin-top: 50px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid var(--primary-color);
+  outline: none;
+  font-size: 17px;
+  background: #262626;
+  padding: 15px;
+  color: var(--primary-color);
+}
+form textarea {
+  border-bottom: none;
+}
 
 .social-icons {
   margin-top: 30px;
@@ -445,6 +478,12 @@ nav ul li a:hover::after {
 .social-icons a:last-child:hover {
   color: rgb(18, 175, 237);
   transform: translateY(-2px);
+}
+#message {
+  color: #ffff00;
+  font-size: 15px;
+  margin-top: 10px;
+  display: block;
 }
 
 footer {
@@ -534,11 +573,19 @@ nav .fa-solid {
     font-size: 16px;
     margin-right: 20px;
   }
-  .contact-left {
+  .contact-left,
+  .contact-right {
     flex-basis: 100%;
   }
   .contact-left p {
     font-size: 16px;
+  }
+  form input,
+  form textarea {
+    font-size: 15px;
+  }
+  form button {
+    font-size: 15px;
   }
   .project h1 {
     font-size: 20px;

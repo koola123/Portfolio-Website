@@ -286,9 +286,6 @@
                 <div class="mySlides fade">
                   <img src="images/me-2.png"  alt="A picture of me"/>
                 </div>
-                <div class="mySlides fade">
-                  <img src="images/me-3.png" alt="A picture of me"/>
-                </div>
                 </div>
                 <br>
                 <div style="text-align:center">
@@ -462,17 +459,44 @@
                 target="_blank"
                 ><i class="fa-brands fa-xing"></i
               ></a>
-              <a href="https://twitter.com/KoolcoderDev" target="_blank"
+              <a href="https://twitter.com/MMueringer" target="_blank"
                 ><i class="fa-brands fa-twitter"></i
               ></a>
             </div>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Name:" required/>
+              <input type="email" name="Email" placeholder="Email:" required/>
+              <textarea name="Message" rows="10" placeholder="Message:" required></textarea>
+              <button class="submit-btn" type="submit">Submit</button>
+            </form>
+            <span id="message"></span>
           </div>
         </div>
       </div>
     </div>
     <footer>
-        <p>&copy; 2023 - Matthias Müringer. All rights reserved. <br><a href="imprint.html" target="_blank" alt="imprint of this portfolio website"> Legal Disclosure</a></p> 
+        <p>&copy; 2023 - Matthias Müringer. All rights reserved. <br><a href="legal-disclosure.html" target="_blank" alt="legal-disclosure text"> Legal Disclosure</a></p> 
     </footer>
     <script src="scripts.js"></script>
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbz_lyjVgNhBNb5SaBkAKSedZnrtH-TYDNmUgAsVCo6P_Z4egHZw7yKfAccfGD2THYHASg/exec';
+      const form = document.forms['submit-to-google-sheet'];
+      const message = document.querySelector('#message');
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+            message.innerHTML = '*Message sent successfully!'
+            setTimeout(() => {
+              message.innerHTML = "";
+            }, 3000);
+            form.reset();
+          })
+          .catch(error => alert('Message could not be send', error.message))
+      })
+    </script>
   </body>
 </html>
