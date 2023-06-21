@@ -1,3 +1,18 @@
+window.onscroll = function() {
+  myFunction();
+}
+
+let nav = document.querySelector("nav");
+let sticky = nav.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    nav.classList.add("sticky");
+  } else {
+    nav.classList.remove("sticky");
+  }
+}
+
 function opentab(tabname) {
   let tablinks = document.querySelectorAll(".tab-links");
   let tabcontents = document.querySelectorAll(".tab-contents");

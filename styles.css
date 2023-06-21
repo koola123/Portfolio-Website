@@ -27,7 +27,16 @@ body {
 #header {
   max-width: 100%;
   height: 100vh;
-  background: var(--dark-green);
+  padding-top: 100px;
+  background-image: url('images/background.png');
+  background-position: center;
+  background-size: cover;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  width: 100%;
 }
 
 .container {
@@ -39,6 +48,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  z-index: 1002;
 }
 
 p {
@@ -57,7 +67,10 @@ nav ul li {
 }
 
 nav ul li a {
-  color: var(--secondary-color);
+  color: var(--primary-color);
+  background: black;
+  border-radius: 5px;
+  padding: 1.7px;
   text-decoration: none;
   font-size: 18px;
   position: relative;
@@ -79,7 +92,7 @@ nav ul li a:hover::after {
 }
 
 .header-text {
-  margin-top: 15.5%;
+  margin-top: 12.5%;
   padding: 35px;
   line-height: 1.1;
 }
@@ -98,7 +111,7 @@ nav ul li a:hover::after {
 }
 @keyframes top-down {
   0% {
-    right: -800px;
+    right: -5000px;
   }
   25% {
     right: 0;
@@ -160,14 +173,14 @@ nav ul li a:hover::after {
   position: relative;
 }
 @keyframes bottom-up {
-  0% {
+  25% {
     bottom: -50px;
     opacity: 0;
   }
   25% {
     bottom: 0;
   }
-  50% {
+  25% {
     bottom: 0;
   }
   75% {
@@ -228,7 +241,12 @@ nav ul li a:hover::after {
 /* ------------- Projects -------------*/
 #projects {
   padding: 50px 0;
-  background: var(--dark-green);
+  background-image: url('images/background-footer.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+  
 }
 .project-list {
   display: grid;
@@ -464,7 +482,7 @@ form textarea {
   transition: 0.3s ease;
 }
 .social-icons a:hover {
-  color: rgb(239, 66, 39);
+  color: rgb(226, 94, 74);
   transform: translateY(-2px);
 }
 #message {
