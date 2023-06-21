@@ -580,26 +580,8 @@ form textarea {
   -o-transition: 0.3s ease;
   transition: 0.3s ease;
 }
-.social-icons a:first-child:hover {
-  color: rgb(255, 255, 255);
-  -webkit-transform: translateY(-2px);
-      -ms-transform: translateY(-2px);
-          transform: translateY(-2px);
-}
-.social-icons a:nth-child(2):hover {
-  color: rgb(0, 114, 177);
-  -webkit-transform: translateY(-2px);
-      -ms-transform: translateY(-2px);
-          transform: translateY(-2px);
-}
-.social-icons a:nth-child(3):hover {
-  color: rgb(18, 101, 103);
-  -webkit-transform: translateY(-2px);
-      -ms-transform: translateY(-2px);
-          transform: translateY(-2px);
-}
-.social-icons a:last-child:hover {
-  color: rgb(18, 175, 237);
+.social-icons a:hover {
+  color: rgb(239, 66, 39);
   -webkit-transform: translateY(-2px);
       -ms-transform: translateY(-2px);
           transform: translateY(-2px);
