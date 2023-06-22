@@ -24,8 +24,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap" rel="stylesheet">
     <!-- ------------- Normalize.css CDN Link ------------- -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="styles.css" type="text/css" />
-    <!-- <link rel="stylesheet" href="styles.production.css" type="text/css" /> -->
+    <!-- <link rel="stylesheet" href="styles.css" type="text/css" /> -->
+    <link rel="stylesheet" href="styles.production.css" type="text/css" />
     <title>
       Matthias Müringer - Web Developer | Germany
     </title>
@@ -423,7 +423,10 @@
               <h2 class="sub-title-2">What I do in my free time</h2>
               <div>As a hobby photographer, I combine travelling with photography. 
                 I often go hiking in the mountains and visit museums.
-                Otherwise, I'm listening to music and spend time with friends and family.</div>
+                Otherwise, I'm listening to music and spend time with friends and family.
+                But last not least, I also try to keep my IT-knowledge up-to-date respectively
+                enhancing my IT-skills.
+              </div>
               <a
               href="files/matthias-mueringer-cv.pdf"
               target="_blank"
@@ -486,7 +489,7 @@
         e.preventDefault()
         fetch(scriptURL, { method: 'POST', body: new FormData(form)})
           .then(response => {
-            message.innerHTML = '*Message sent successfully!'
+            message.innerHTML = 'Message sent successfully!'
             setTimeout(() => {
               message.innerHTML = "";
             }, 3000);

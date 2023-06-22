@@ -119,8 +119,8 @@ nav ul li a:hover::after {
   margin-top: 20px;
   -webkit-animation-name: right-to-left;
           animation-name: right-to-left;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
+  -webkit-animation-duration: 5.5s;
+          animation-duration: 5.5s;
   position: relative;
 }
 @-webkit-keyframes right-to-left {
@@ -165,6 +165,26 @@ nav ul li a:hover::after {
   color: var(--scondary-color);
   position: relative;
   z-index: 1;
+  -webkit-animation-name: top-down;
+          animation-name: top-down;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+}
+@-webkit-keyframes top-down {
+  from {
+    top: -1000px;
+  }
+  to {
+    top: 0;
+  }
+}
+@keyframes top-down {
+  from {
+    top: -1000px;
+  }
+  to {
+    top: 0;
+  }
 }
 
 .header-text p::before,
