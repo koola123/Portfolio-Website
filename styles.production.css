@@ -10,6 +10,23 @@
   --secondary-color: hsl(0, 0%, 96%);
   --dark-green: #2c4a4c;
   --button-darker: #a4a407;
+  --bg-expertise-div: #e3e305;
+  --expertise-div-hover: #ccc;
+  --bg-projects: #222;
+  --bg-contact: hsl(184, 27%, 28%);
+  --square: hsl(60, 100%, 40%);
+}
+
+.dark-theme {
+  --primary-color: #cccc00d9;
+  --secondary-color: hsla(0, 0%, 96%, 0.723);
+  --dark-green: #000;
+  --button-darker: #666;
+  --bg-expertise-div: #a3a306;
+  --expertise-div-hover: #8d8787;
+  --bg-projects: #000;
+  --bg-contact: #000;
+  --square: hsl(60, 65%, 40%);
 }
 
 * {
@@ -29,6 +46,9 @@ body {
   font-size: 1.2rem;
   background: var(--dark-green);
   color: var(--secondary-color);
+  -webkit-transition: 0.8s, color 0.8s;
+  -o-transition: 0.8s, color 0.8s;
+  transition: 0.8s, color 0.8s;
 }
 
 /* ------------ Header -------------*/
@@ -203,13 +223,13 @@ nav ul li a:hover::after {
 }
 
 .header-text p::before {
-  border-top: 10px solid hsl(60, 100%, 40%);
-  border-left: 10px solid hsl(60, 100%, 40%);
+  border-top: 10px solid var(--square);
+  border-left: 10px solid var(--square);
 }
 
 .header-text p::after {
-  border-bottom: 10px solid hsl(60, 100%, 40%);
-  border-right: 10px solid hsl(60, 100%, 40%);
+  border-bottom: 10px solid var(--square);
+  border-right: 10px solid var(--square);
   z-index: -1;
 }
 
@@ -314,7 +334,7 @@ nav ul li a:hover::after {
   margin-top: 50px;
 }
 .expertise-list div {
-  background: #e3e305;
+  background: var(--bg-expertise-div);
   color: rgb(0, 0, 0.8);
   padding: 40px;
   font-size: 13px;
@@ -349,7 +369,7 @@ nav ul li a:hover::after {
   display: inline-block;
 }
 .expertise-list div:hover {
-  background: #ccc;
+  background: var(--expertise-div-hover);
   -webkit-transform: translateY(-10px);
       -ms-transform: translateY(-10px);
           transform: translateY(-10px);
@@ -358,7 +378,7 @@ nav ul li a:hover::after {
 /* ------------- Projects -------------*/
 #projects {
   padding: 50px 0;
-  background: #222;
+  background: var(--bg-projects);
 }
 .project-list {
   display: -ms-grid;
@@ -581,7 +601,7 @@ nav ul li a:hover::after {
 
 /* ------------- Contact -------------*/
 #contact {
-  background: hsl(184, 27%, 28%);
+  background: var(--bg-contact);
   min-height: 350px;
   color: #ababab;
 }
@@ -673,6 +693,30 @@ footer a {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 50px;
+}
+
+/*------------- Dark Theme Button-------------*/
+.toggle-btn {
+  background: #222;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 150px;
+  height: 40px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.toggle-btn img {
+  width: 20px;
+  margin-left: 10px;
+  color: var(--primary-color);
 }
 
 /*------------- CSS For Small Screens -------------*/
@@ -803,6 +847,14 @@ nav .fa-solid {
   }
   .expertise-list ul li {
     font-size: 16px;
+  }
+  .toggle-btn {
+    width: 100px;
+  }
+  .toggle-btn img {
+    width: 18px;
+    margin-left: 5px;
+    color: var(--primary-color);
   }
 }
 
