@@ -1,17 +1,7 @@
-window.onscroll = function() {
-  myFunction();
-}
-
-let nav = document.querySelector("nav");
-let sticky = nav.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    nav.classList.add("sticky");
-  } else {
-    nav.classList.remove("sticky");
-  }
-}
+window.addEventListener("scroll", function() {
+  const nav = document.querySelector("nav");
+  nav.classList.toggle("sticky", window.scrollY > 550);
+})
 
 function opentab(tabname) {
   let tablinks = document.querySelectorAll(".tab-links");

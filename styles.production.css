@@ -35,16 +35,13 @@ body {
 #header {
   max-width: 100%;
   height: 100vh;
-  padding-top: 100px;
-  background-image: url('images/background.png');
-  background-position: center;
-  background-size: cover;
+  padding-top: 50px;
 }
 
 .sticky {
-  position: sticky;
+  position: fixed;
   top: 0;
-  width: 100%;
+  width: 80%;
 }
 
 .container {
@@ -83,7 +80,6 @@ nav ul li {
 
 nav ul li a {
   color: var(--primary-color);
-  background: black;
   border-radius: 5px;
   padding: 1.7px;
   text-decoration: none;
@@ -121,15 +117,13 @@ nav ul li a:hover::after {
 .header-text h1 {
   font-size: 62px;
   margin-top: 20px;
-  -webkit-animation-name: top-down;
-          animation-name: top-down;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
+  -webkit-animation-name: right-to-left;
+          animation-name: right-to-left;
   -webkit-animation-duration: 5s;
           animation-duration: 5s;
   position: relative;
 }
-@-webkit-keyframes top-down {
+@-webkit-keyframes right-to-left {
   0% {
     right: -5000px;
   }
@@ -147,7 +141,7 @@ nav ul li a:hover::after {
     opacity: 1;
   }
 }
-@keyframes top-down {
+@keyframes right-to-left {
   0% {
     right: -5000px;
   }
@@ -218,10 +212,8 @@ nav ul li a:hover::after {
   color: var(--secondary-color);
   -webkit-animation-name: bottom-up;
           animation-name: bottom-up;
-  -webkit-animation-direction: infinite;
-          animation-direction: infinite;
-  -webkit-animation-duration: 3.8s;
-          animation-duration: 3.8s;
+  -webkit-animation-duration: 4.2s;
+          animation-duration: 4.2s;
   position: relative;
 }
 @-webkit-keyframes bottom-up {
@@ -229,17 +221,13 @@ nav ul li a:hover::after {
     bottom: -50px;
     opacity: 0;
   }
-  25% {
+  45% {
     bottom: 0;
-  }
-  25% {
-    bottom: 0;
-  }
-  75% {
-    bottom: 0;
+    opacity: 0;
   }
   100% {
     bottom: 0;
+    opacity: 1;
   }
 }
 @keyframes bottom-up {
@@ -247,17 +235,49 @@ nav ul li a:hover::after {
     bottom: -50px;
     opacity: 0;
   }
-  25% {
+  45% {
     bottom: 0;
-  }
-  25% {
-    bottom: 0;
-  }
-  75% {
-    bottom: 0;
+    opacity: 0;
   }
   100% {
     bottom: 0;
+    opacity: 1;
+  }
+}
+
+.header-text h3 {
+  -webkit-animation-name: left-to-right;
+          animation-name: left-to-right;
+  -webkit-animation-duration: 7s;
+          animation-duration: 7s;
+  position: relative;
+}
+@-webkit-keyframes left-to-right {
+  25% {
+    opacity: 0;
+    bottom: -20px;
+  }
+  50% {
+    bottom: -20px;
+    opacity: 0;
+  }
+  100% {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+@keyframes left-to-right {
+  25% {
+    opacity: 0;
+    bottom: -20px;
+  }
+  50% {
+    bottom: -20px;
+    opacity: 0;
+  }
+  100% {
+    bottom: 0;
+    opacity: 1;
   }
 }
 
@@ -318,12 +338,7 @@ nav ul li a:hover::after {
 /* ------------- Projects -------------*/
 #projects {
   padding: 50px 0;
-  background-image: url('images/background-main.png');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment:fixed;
-  
+  background: #222;
 }
 .project-list {
   display: -ms-grid;
@@ -476,9 +491,12 @@ nav ul li a:hover::after {
 }
 
 .about-col-2 p {
-  letter-spacing: 8px;
+  line-height: 1.7;
 }
-
+.about-col-2 p span {
+  color: #000;
+  background-color: var(--primary-color);
+}
 .about-col-2 div {
   text-align: justify;
 }
@@ -644,17 +662,17 @@ nav .fa-solid {
 
 @media all and (max-width: 790px) {
   .header-text {
-    margin-top: 50%;
+    margin-top: 10%;
     font-size: 16px;
   }
   .header-text p {
     font-size: 16px;
   }
   .header-text h1 {
-    font-size: 30px;
+    font-size: 34px;
   }
   .header-text h2 {
-    font-size: 20px;
+    font-size: 25px;
   }
   nav .fa-solid {
     display: block;
