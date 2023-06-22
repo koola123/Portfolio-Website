@@ -217,7 +217,7 @@ nav ul li a:hover::after {
   position: relative;
 }
 @-webkit-keyframes bottom-up {
-  25% {
+  0% {
     bottom: -50px;
     opacity: 0;
   }
@@ -231,7 +231,7 @@ nav ul li a:hover::after {
   }
 }
 @keyframes bottom-up {
-  25% {
+  0% {
     bottom: -50px;
     opacity: 0;
   }
@@ -253,7 +253,7 @@ nav ul li a:hover::after {
   position: relative;
 }
 @-webkit-keyframes left-to-right {
-  25% {
+  0% {
     opacity: 0;
     bottom: -20px;
   }
@@ -267,7 +267,7 @@ nav ul li a:hover::after {
   }
 }
 @keyframes left-to-right {
-  25% {
+  0% {
     opacity: 0;
     bottom: -20px;
   }
