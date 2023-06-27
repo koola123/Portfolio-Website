@@ -21,6 +21,7 @@ const btnIcon = document.getElementById("btnIcon");
 window.addEventListener("scroll", function() {
   const nav = document.querySelector("nav");
   nav.classList.toggle("sticky", window.scrollY > 550);
+  nav.style.background = "var(--dark-green)";
 });
 
 function opentab(tabname) {

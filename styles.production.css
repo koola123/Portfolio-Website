@@ -601,7 +601,7 @@ nav ul li a:hover::after {
 
 /* ------------- Contact -------------*/
 #contact {
-  background: var(--bg-contact);
+  background: var(--dark-green);
   min-height: 350px;
   color: #ababab;
 }
@@ -750,7 +750,7 @@ nav .fa-solid {
     width: 120px;
     height: 500px;
     padding-top: 50px;
-    z-index: 2;
+    z-index: 3000;
     -webkit-transition: right 0.5s ease-in-out;
     -o-transition: right 0.5s ease-in-out;
     transition: right 0.5s ease-in-out;
